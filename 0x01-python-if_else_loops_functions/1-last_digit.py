@@ -10,4 +10,4 @@ if lastdigit > 5:
 elif lastdigit == 0:
     print(f"{string} and is 0")
 elif lastdigit < 6:
-    print(f"{string} and is less than 6 not 0")
+    print(f"{string} and is less than 6 and not 0")
