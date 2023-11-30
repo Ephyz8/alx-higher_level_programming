@@ -1,8 +1,10 @@
 #!/usr/bin/python3
+
 if __name__ == "__main__":
     """Print the added arguments"""
-    import sys, math
+    import sys
+
     result = 0
     for i in range (len(sys.argv) - 1):
         result += int(sys.argv[i + 1])
-        print("{}".format(result))
+    print("{}".format(result))
