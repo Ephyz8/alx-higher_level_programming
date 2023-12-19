@@ -2,6 +2,7 @@
 
 """Empty class of Square"""
 
+
 class Square:
     """Square class"""
     pass
