@@ -101,7 +101,7 @@ class Base:
         except IOError:
             return []
         
-     @classmethod
+    @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
 
