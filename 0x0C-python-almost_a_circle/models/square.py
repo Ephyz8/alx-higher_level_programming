@@ -20,12 +20,12 @@ class Square(Rectangle):
     def __str__(self):
         """Return Square str () and print() representation"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
-    
+
     @property
     def size(self):
         """Get the size of the Square"""
         return self.width
-    
+
     @size.setter
     def size(self, value):
         """Set the size of the Square"""
@@ -45,34 +45,34 @@ class Square(Rectangle):
         """
 
         if args and len(args) != 0:
-                num = 0
-                for arg in args:
-                    if num == 0:
-                        if arg is None:
-                            self.__init__(self.size, self.x, self.y)
-                        else:
-                            self.id = arg
-                    elif num == 1:
-                        self.size = arg
-                    elif num == 2:
-                        self.x = arg
-                    elif num == 3:
-                        self.y = arg
-                    num += 1
+            num = 0
+            for arg in args:
+                if num == 0:
+                    if arg is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = arg
+                elif num == 1:
+                    self.size = arg
+                elif num == 2:
+                    self.x = arg
+                elif num == 3:
+                    self.y = arg
+                num += 1
 
         elif kwargs and len(kwargs) != 0:
-                for i, j in kwargs.items():
-                    if i == "id":
-                        if j is None:
-                            self.__init__(self.size, self.x, self.y)
-                        else:
-                            self.id = j
-                    elif i == "size":
-                        self.size = j
-                    elif i == "x":
-                        self.x = j
-                    elif i == "y":
-                        self.y = j
+            for i, j in kwargs.items():
+                if i == "id":
+                    if j is None:
+                        self.__init__(self.size, self.x, self.y)
+                    else:
+                        self.id = j
+                elif i == "size":
+                    self.size = j
+                elif i == "x":
+                    self.x = j
+                elif i == "y":
+                    self.y = j
 
     def to_dictionary(self):
         """Return representation of the Square dictionary."""
@@ -81,4 +81,4 @@ class Square(Rectangle):
             "size": self.width,
             "x": self.x,
             "y": self.y
-        }
+            }
