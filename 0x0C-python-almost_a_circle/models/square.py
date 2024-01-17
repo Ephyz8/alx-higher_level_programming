@@ -20,18 +20,12 @@ class Square(Rectangle):
     def __str__(self):
         """Return Square str () and print() representation"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
-<<<<<<< HEAD
 
-=======
->>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
     @property
     def size(self):
         """Get the size of the Square"""
         return self.width
-<<<<<<< HEAD
 
-=======
->>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
     @size.setter
     def size(self, value):
         """Set the size of the Square"""
@@ -86,8 +80,4 @@ class Square(Rectangle):
             "size": self.width,
             "x": self.x,
             "y": self.y
-<<<<<<< HEAD
             }
-=======
-            }
->>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
