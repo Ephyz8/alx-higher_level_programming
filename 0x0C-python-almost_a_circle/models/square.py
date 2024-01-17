@@ -41,7 +41,6 @@ class Square(Rectangle):
                 4th argument is the y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-
         if args and len(args) != 0:
             num = 0
             for arg in args:
