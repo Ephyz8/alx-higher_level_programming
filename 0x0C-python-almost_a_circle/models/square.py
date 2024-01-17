@@ -20,12 +20,18 @@ class Square(Rectangle):
     def __str__(self):
         """Return Square str () and print() representation"""
         return (f"[Square] ({self.id}) {self.x}/{self.y} - {self.height}")
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
     @property
     def size(self):
         """Get the size of the Square"""
         return self.width
+<<<<<<< HEAD
 
+=======
+>>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
     @size.setter
     def size(self, value):
         """Set the size of the Square"""
@@ -43,7 +49,6 @@ class Square(Rectangle):
                 4th argument is the y attribute
             **kwargs (dict): New key/value pairs of attributes.
         """
-
         if args and len(args) != 0:
             num = 0
             for arg in args:
@@ -81,4 +86,8 @@ class Square(Rectangle):
             "size": self.width,
             "x": self.x,
             "y": self.y
+<<<<<<< HEAD
             }
+=======
+            }
+>>>>>>> 7062a969d4e3dff7e70f94347ddcd1815976b746
