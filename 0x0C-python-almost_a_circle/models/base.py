@@ -15,10 +15,10 @@ class Base:
     """
 
     __nb_objects = 0
-    
+
     def __init__(self, id=None):
         """New base initialization.
- 
+
         Argument:
         id (int): New Base identity
         """
@@ -27,7 +27,7 @@ class Base:
         else:
             Base.__nb_objects += 1
             self.id = Base.__nb_objects
-            
+
     @staticmethod
     def to_json_string(list_dictionaries):
         """Return the JSON serialization of a list of dictionaries.
@@ -38,7 +38,7 @@ class Base:
         if list_dictionaries is None or list_dictionaries == []:
             return "[]"
         return json.dumps(list_dictionaries)
-    
+
     @classmethod
     def save_to_file(cls, list_objs):
         """Write the JSON serialization of a list of objects to a file.
@@ -59,7 +59,7 @@ class Base:
         """Return the deserialization of a JSON string.
 
         Argument:
-            json_string (str): A JSON string representation of a list of dictionaries.
+            json_string (str): A JSON str is arep. of a list of dictionaries
         Returns:
             If json_string is None or empty - an empty list.
             Otherwise - the Python list represented by json_string.
@@ -67,7 +67,7 @@ class Base:
         if json_string is None or json_string == "[]":
             return []
         return json.loads(json_string)
-    
+
     @classmethod
     def create(cls, **dictionary):
         """Return a class instantied from a dictionary of attributes.
@@ -82,7 +82,7 @@ class Base:
                 new = cls(1)
             new.update(**dictionary)
             return new
-        
+
     @classmethod
     def load_from_file(cls):
         """Return a list of classes instantiated from a file of JSON strings.
@@ -100,7 +100,7 @@ class Base:
                 return [cls.create(**m) for m in list_dicts]
         except IOError:
             return []
-        
+
     @classmethod
     def load_from_file_csv(cls):
         """Return a list of classes instantiated from a CSV file.
