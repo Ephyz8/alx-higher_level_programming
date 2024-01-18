@@ -15,7 +15,7 @@ class Rectangle(Base):
             x (int): The x coordinate of the Rectangle.
             y (int): The y coordinate of the Rectangle.
             id (int): The identity of the Rectangle.
-        
+
         Raises:
             TypeError: If either width or height is not an integer.
             ValueError: If either width or height <= 0.
@@ -32,7 +32,7 @@ class Rectangle(Base):
     def width(self):
         """Get the width of the Rectangle"""
         return self.__width
-    
+
     @width.setter
     def width(self, value):
         """Set the width of the Rectangle"""
@@ -46,7 +46,7 @@ class Rectangle(Base):
     def height(self):
         """Get the height of the Rectangle"""
         return self.__height
-    
+
     @height.setter
     def height(self, value):
         """Set the height of the Rectangle"""
@@ -60,7 +60,7 @@ class Rectangle(Base):
     def x(self):
         """Get the x coordinate of the Rectangle"""
         return self.__x
-    
+
     @x.setter
     def x(self, value):
         """Set the x coordinate of the Rectangle"""
@@ -74,7 +74,7 @@ class Rectangle(Base):
     def y(self):
         """Get the y coordinate of the Rectangle"""
         return self.__y
-    
+
     @y.setter
     def y(self, value):
         """Set the y coordinate of the Rectangle"""
@@ -87,7 +87,7 @@ class Rectangle(Base):
     def area(self):
         """Return the area of the Rectangle."""
         return self.width * self.height
-    
+
     def display(self):
         """Using '#' to print Rectangle"""
         if self.width == 0 or self.height == 0:
@@ -100,8 +100,9 @@ class Rectangle(Base):
 
     def __str__(self):
         """Overiding the __str__ method"""
-        return(f"[Rectangle] ({self.id}) {self.x}/{self.y} - {self.width}/{self.height}")
-    
+        return(f"[Rectangle]({self.id}) {self.x}/{self.y}'\
+                - {self.width}/{self.height}")
+
     def update(self, *args, **kwargs):
         """Rectangle update.
 
@@ -157,16 +158,4 @@ class Rectangle(Base):
             "height": self.height,
             "x": self.x,
             "y": self.y
-        }
-
-
-
-                
-                
-
-
-
-
-
-
- 
+            }
