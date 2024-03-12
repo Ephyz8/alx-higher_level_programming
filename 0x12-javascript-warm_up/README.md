@@ -1,0 +1,3 @@
+JavaScript is used for many things. Here, we will use JavaScript for 2 reasons:
+    Scripting (same as we did with Python)
+    Web front-end
