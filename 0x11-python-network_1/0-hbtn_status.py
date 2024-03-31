@@ -1,3 +1,4 @@
+#!/usr/bin/python3
 import urllib.request
 """Fetches https://alx-intranet.hbtn.io/status"""
 url = "https://alx-intranet.hbtn.io/status"
@@ -11,4 +12,4 @@ if __name__ == "__main__":
         print("\t\t- content:", body)
    except urllib.error.URLError as e:
        print("Error fetching URL:", e)
-       
+
