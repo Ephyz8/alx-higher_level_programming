@@ -10,4 +10,3 @@ if __name__ == '__main__':
     status = url.status_code
     print(url.text) if status < 400 else print(
         "Error code: {}".format(url.status_code))
-    
