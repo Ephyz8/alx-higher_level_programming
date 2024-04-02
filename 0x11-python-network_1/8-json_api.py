@@ -15,13 +15,13 @@ if __name__ == '__main__':
     t_resp = resp.headers['content-type']
 
     try:
-      t_resp == 'application/json'
-      result = resp.json()
-      id = result.get('id')
-      name = result.get('name')
-      if (result != {} and id and name):
-        print("[{}] {}".format(id, name))
-      else:
-        print('No result')
+        t_resp == 'application/json'
+        result = resp.json()
+        id = result.get('id')
+        name = result.get('name')
+        if (result != {} and id and name):
+          print("[{}] {}".format(id, name))
+        else:
+          print('No result')
     except Exception:
         print("Not a valid JSON")
